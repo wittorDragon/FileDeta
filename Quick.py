@@ -8,10 +8,11 @@ def partition(array, low, high):
     pivot = array[high]
     i = low - 1
 
-    for j in range(low, high):
+    for j in range(low, high): # run
         if array[j] >= pivot:
             i += 1
             array[i], array[j] = array[j], array[i]
+
 
     array[i+1], array[high] = array[high], array[i+1]
     return i+1
@@ -33,6 +34,7 @@ for i in range(len(sp)):
     my_array.append(quicksort(sp[i]))
 
 print(my_array[0])
+
 
 
 end_time = time.time()  # จับเวลาสิ้นสุด
