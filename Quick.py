@@ -2,7 +2,7 @@ import Bubble as bb
 import mmToList as mm
 import time
 
-start_time = time.time()  # เริ่มจับเวลา
+start_time = time.time()   # เริ่มจับเวลา
 
 def partition(array, low, high):
     pivot = array[high]
@@ -35,9 +35,10 @@ for i in range(len(sp)):
 print(my_array[0])
 
 
-
 end_time = time.time()  # จับเวลาสิ้นสุด
 elapsed_time = end_time - start_time  # ระยะเวลาที่ใช้
 
 print(f"ใช้เวลา: {elapsed_time:.4f} วินาที")
+
+
 
